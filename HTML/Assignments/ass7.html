@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 7</title>
+  </head>
+  <body>
+    <div>
+      <form>
+        <h2>Job Application Form</h2>
+        <p>Please fill in the form to apply for a position with our company.</p>
+        <br />
+        <table>
+          <tr align="left">
+            <td align="left">
+              <label for="first name"> First Name </label> <br />
+              <input
+                type="text"
+                name="first name"
+                placeholder="Enter your first name"
+              />
+              <br />
+            </td>
+            <td>
+              <label for="last name"> Last Name </label> <br />
+              <input
+                type="text"
+                name="last name"
+                placeholder="Enter your last name"
+              />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <label for="email address"> Email Address </label>
+        <input
+          type="email"
+          name="email address"
+          placeholder="example@domain.com"
+        /><br />
+        <small>We'll never share your email with anyone else</small> <br /> <br>
+        <label for="phone number"> Phone number </label> <br />
+        <input type="number" name="phone number" placeholder="+1-555-0100" /> <br>
+        <small>Include country code if applicable</small> <br /> <br>
+        <label for="position"> Position Applied For </label> <br />
+        <select name="position">
+          <br />
+          <option value="select position">Select position</option>
+          <option value="frontend engineer">Frontend Engineer</option>
+          <option value="backend engineer">Backend Engineer</option>
+          <option value="full stack engineer">Full Stack Engineer</option>
+        </select><br><br>
+        <label for="resume/cv">
+            Resume/CV
+        </label><br>
+        <small>Attach your resume/CV in PDF format</small><br>
+        <input type="file" name="resume/CV"><br><br>
+        <label for="cover letter">
+            Cover Letter
+        </label><br>
+        <textarea name="cover letter" id="" cols="30" rows="10" placeholder="Please introduce yourself and explain why you are a good fit for the p..."></textarea>
+        <li>
+            <input type="radio" name="entry level" > Entry Level
+        </li>
+        <li>
+            <input type="radio" name="entry level" > Mid Level
+        </li>
+        <li>
+            <input type="radio" name="entry level" > Senior Level
+        </li>
+        <li>
+            <input type="radio" name="entry level" > Other (please specify)
+        </li> <br>
+
+        <label for="date">
+            Earliest Possible Start Date
+        </label><br>
+        <input type="date" name="start date" id=""><br><br>
+        <input type="checkbox" name="consent">I consent to the privacy policy and terms of servic. <br><br>
+
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </body>
+</html>
