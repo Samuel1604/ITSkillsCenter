@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Admission Form</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <form action="#" method="POST">
+        <!-- Hero Section -->
+        <h1>Student Admission Form</h1>
+        <p>
+          Please fill out the form below to register for the upcoming semester
+        </p>
+        <!-- Person Info Section -->
+        <section>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <br />
+            <div style="display: flex; flex-direction: column">
+              <label for="full-name"> Full Name </label>
+              <input
+                type="text"
+                id="full-name"
+                name="student_name"
+                placeholder="e.g. John Doe"
+                required
+              />
+              <br />
+              <label for="email-address"> Email Address </label>
+              <input
+                type="email"
+                name="student_email"
+                id="email-address"
+                placeholder="john@example.com"
+                required
+              />
+              <br />
+              <label for="user-password"> Password </label>
+              <input
+                type="password"
+                id="user-password"
+                name="student_password"
+                required
+              />
+              <br />
+              <label for="phone"> Phone Number </label>
+              <input
+                type="tel"
+                name="student_phone"
+                id="phone"
+                placeholder="123-456-7890"
+                required
+              />
+
+              <br />
+              <label for="dob"> Date of Birth </label>
+              <input type="date" id="dob" name="student_dob" required />
+              <br />
+            </div>
+          </fieldset>
+        </section>
+        <br />
+        <!-- Academic Choices Section -->
+        <section>
+          <fieldset>
+            <legend>Academic Choices</legend>
+            <br />
+            <div>
+              <label> Gender </label>
+              <br />
+              <input type="radio" id="male" name="gender" />Male
+              <input type="radio" id="female" name="gender" />Female
+              <input type="radio" id="other" name="gender" />Other
+              <br />
+              <br />
+              <label for="course-select"> Desired Course </label>
+              <br />
+              <select name="course" id="course=select" required>
+                <option value="">---Please choose a course---</option>
+                <option value="software-eng">Software Engineering</option>
+                <option value="data-analysis">Data Analysis</option>
+                <option value="cybersec">CyberSecurity</option>
+              </select>
+              <br />
+              <br />
+              <label> Campus Facilities Needed </label>
+              <br />
+              <input
+                type="checkbox"
+                name="facility"
+                id="library"
+                value="library"
+              />Library Access
+              <input
+                type="checkbox"
+                name="facility"
+                id="hostel"
+                value="hostel"
+              />Hostel Accommodation
+              <input
+                type="checkbox"
+                name="facility"
+                id="sports"
+                value="sports"
+              />Sports Complex
+            </div>
+            <br />
+          </fieldset>
+        </section>
+
+        <br />
+        <!-- Additional Details Section -->
+        <section>
+          <fieldset>
+            <legend>Additional Details</legend>
+            <br />
+            <div style="display: flex; flex-direction: column">
+              <label for="Additional Details" id="addidtional_details">
+                Why do you want to join this campus?
+              </label>
+              <textarea
+                name="Additional Details"
+                cols="8"
+                rows="4"
+                placeholder="Tell us about your goals..."
+              ></textarea>
+            </div>
+            <br />
+          </fieldset>
+        </section>
+
+        <br />
+        <!-- Submit Button Section -->
+        <section>
+          <button
+            type="submit"
+            style="
+              background-color: rgb(83, 236, 83);
+              border-radius: 5px;
+              border: none;
+              width: 100%;
+              padding: 5px;
+              color: azure;
+            "
+          >
+            Submit Application
+          </button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
